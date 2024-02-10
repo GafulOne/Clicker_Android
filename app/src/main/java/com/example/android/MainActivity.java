@@ -98,12 +98,20 @@ public class MainActivity extends AppCompatActivity {
             if (score == 50)
             {
                 Toast.makeText(getApplicationContext(), "Достижение получено! Покемон эволюционировал!",Toast.LENGTH_LONG).show();
-                        plusButton.setImageResource(R.drawable.charmeleon);
+                plusButton.setImageResource(R.drawable.charmeleon);
+            }
+            if (score == 49)
+            {
+                plusButton.setImageResource(R.drawable.charmander);
             }
             if (score == 100)
             {
                 Toast.makeText(getApplicationContext(), "Достижение получено! Покемон эволюционировал!",Toast.LENGTH_LONG).show();
                 plusButton.setImageResource(R.drawable.charizard);
+            }
+            if (score == 99)
+            {
+                plusButton.setImageResource(R.drawable.charmeleon);
             }
             if (score == 1000)
             {
