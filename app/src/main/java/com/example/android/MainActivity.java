@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             if(v.getId() == R.id.minus_Button)
             {
                 score --;
-                if (score == 12 || score == 13 || score == 14)
+                if (score == -12 || score == -13 || score == -14)
                 {
                     String s = "Кнопка нажата " + score + " раз";
                     mainText.setText(s.toCharArray(),0, s.length());
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    if (score % 10 == 2 || score % 10 == 3 || score % 10 == 4)
+                    if (score % 10 == -2 || score % 10 == -3 || score % 10 == -4)
                     {
                         String s = "Кнопка нажата " + score + " раза";
                         mainText.setText(s.toCharArray(),0, s.length());
@@ -90,22 +91,24 @@ public class MainActivity extends AppCompatActivity {
             if(v.getId() == R.id.drop_Button)
             {
                 score = 0;
-                String s = "Кнопка нажата " + score + " раза";
+                String s = "Кнопка нажата " + score + " раз";
                 mainText.setText(s.toCharArray(),0, s.length());
                 dropButton.setOnClickListener(clickListener);
             }
             if (score == 50)
             {
-                plusButton.setImageResource(R.drawable.charmeleon);
-
+                Toast.makeText(getApplicationContext(), "Достижение получено! Покемон эволюционировал!",Toast.LENGTH_LONG).show();
+                        plusButton.setImageResource(R.drawable.charmeleon);
             }
             if (score == 100)
             {
+                Toast.makeText(getApplicationContext(), "Достижение получено! Покемон эволюционировал!",Toast.LENGTH_LONG).show();
                 plusButton.setImageResource(R.drawable.charizard);
-
+            }
+            if (score == 1000)
+            {
+                Toast.makeText(getApplicationContext(), "Достижение получено: Потрогай траву",Toast.LENGTH_LONG).show();
             }
         }
     };
-
-
 }
