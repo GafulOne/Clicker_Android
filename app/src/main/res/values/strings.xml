@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android</string>
+    <string name="click_number">Кнопка нажата 0 раз</string>
+    <string name="click_me">НАЖМИ МЕНЯ</string>
+    <string name="dont_click_me">НЕ НАЖИМАЙ МЕНЯ</string>
+    <string name="drop">СБРОСИТЬ СЧЁТ</string>
+</resources>
