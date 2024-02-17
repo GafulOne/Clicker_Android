@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Android</string>
-    <string name="click_number">Кнопка нажата 0 раз</string>
+    <string name="click_number">0</string>
     <string name="click_me">НАЖМИ МЕНЯ</string>
-    <string name="dont_click_me">НЕ НАЖИМАЙ МЕНЯ</string>
-    <string name="drop">СБРОСИТЬ СЧЁТ</string>
+    <string name="test">TEST</string>
+    <string name="title_activity_shop">Shop</string>
+    <string name="first_fragment_label"/>
+    <string name="second_fragment_label"/>
 </resources>

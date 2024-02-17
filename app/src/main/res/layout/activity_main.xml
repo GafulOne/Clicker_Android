@@ -11,27 +11,27 @@
         android:id="@+id/main_Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="410dp"
+        android:layout_marginBottom="154dp"
         android:text="@string/click_number"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/drop_Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/plus_Button"
-        android:layout_width="343dp"
-        android:layout_height="175dp"
+        android:layout_width="147dp"
+        android:layout_height="125dp"
         android:layout_alignParentStart="true"
-
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="33dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginBottom="380dp"
+        android:layout_marginEnd="231dp"
+        android:layout_marginBottom="457dp"
         android:background="@color/black"
         android:contentDescription="@string/click_me"
         android:scaleType="centerInside"
@@ -40,36 +40,15 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/minus_Button"
-        android:layout_width="356dp"
-        android:layout_height="195dp"
-
-        android:layout_alignParentStart="true"
+        android:id="@+id/test_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="28dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginBottom="166dp"
-        android:contentDescription="@string/drop"
-        android:text="@string/dont_click_me"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/drop_Button"
-        android:layout_width="308dp"
-        android:layout_height="100dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="39dp"
-        android:text="@string/drop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_Text" />
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="595dp"
+        android:onClick="onClick"
+        android:text="Магазин"
+        android:textSize="20sp"></Button>
 
 </RelativeLayout>
